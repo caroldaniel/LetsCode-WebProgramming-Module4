@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Imóveis, Casas e Apartamentos Para Compra, Venda e Aluguel - Viva Real</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style-reset.css"/>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<header>
+		<div class="site-header-container">
+			<a href="index.html" class="site-header-icon" title="Viva Real - Conecta você ao imóvel dos seus sonhos"><img src="icons/icon-vivareal_mod.png"/></a>
+		</div>
+		<div class="site-navigation">
+			<a class="nav-link"><p>Comprar</p></a>
+			<a class="nav-link"><p>Alugar</p></a>
+			<a class="nav-link"><p>Imóveis Novos</p></a>
+			<a class="nav-link"><p>Seleção Viva Real</p></a>
+			<a class="nav-link"><p>Descobrir</p></a>
+		</div>
+		<div class="site-navigation-right">
+			<a class="nav-link"><p>Anunciar Imóveis</p></a>
+			<a class="nav-link"><p>Entrar</p></a>
+		</div>
+	</header>
+	<main>
+		<aside>
+			<div class="search-container">
+				<form id="js-form" class="search-field">
+					<div class="label-title">
+						<label>Localização do imóvel</label>
+					</div>
+					<input type="text" placeholder="Digite uma rua, bairro ou cidade" autocomplete="off" class="js-search-input text-box">
+					<section class="js-search-location">
+
+					</section>
+				</form>
+				<form>
+					<div class="label-title">
+						<label>Imóvel com</label>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" class="search-checkbox" id="switch">
+						<label for="switch" class="checkbox-label"><span>Tour Virtual ou Vídeos</span></label>
+					</div>
+				</form>
+				<form>
+					<div class="label-title">
+						<label>Tipo de imóvel</label>
+					</div>
+					<div class="search">
+						<label for="searchbar"><img src="icons/arrow.png" /></label> 
+						<button id="searchbar" class="text-box">Mostrar todos</button>
+					</div>
+				</form>
+				<form class="search-price">
+					<div>
+						<div class="label-title">
+							<label>Preço Mínimo</label>
+						</div>
+						<div class="price">
+							<input id="min-price" type="text" autocomplete="off" class="min-max-input">	
+							<label for="min-price">R$</label>
+						</div>
+					</div>
+					<div>
+						<div class="label-title">
+							<label>Preço Máximo</label>
+						</div>
+						<div class="price">
+							<input id="max-price" type="text" placeholder="ilimitado" autocomplete="off" class="min-max-input">	
+							<label for="max-price">R$</label>
+						</div>
+					</div>
+				</form>
+				<form>
+					<div class="label-title">
+						<label>Número de quartos</label>
+					</div>
+					<div class="bullets">
+						<input type="radio" name="rooms" id="quartos1" class="bullet"/>
+						<label for="quartos1" class="bullet-label bullet1"></label>
+						<input type="radio" name="rooms" id="quartos2" class="bullet"/>
+						<label for="quartos2" class="bullet-label bullet2"></label>
+						<input type="radio" name="rooms" id="quartos3" class="bullet"/>
+						<label for="quartos3" class="bullet-label bullet3"></label>
+						<input type="radio" name="rooms" id="quartos4" class="bullet"/>
+						<label for="quartos4" class="bullet-label bullet4"></label>
+						<input type="radio" name="rooms" id="quartos5" class="bullet"/>
+						<label for="quartos5" class="bullet-label bullet5"></label>	
+					</div>
+				</form>
+			</div>
+			<div class="options-container">
+				<form class="search-area">
+					<div>
+						<div class="label-title">
+							<label>Área Mínima</label>
+						</div>
+						<div class="area">
+							<input id="min-area" type="text" autocomplete="off" class="min-max-input">	
+							<label for="min-area">m²</label>
+						</div>
+					</div>
+					<div>
+						<div class="label-title">
+							<label>Área Máxima</label>
+						</div>
+						<div class="area">
+							<input id="max-area" type="text" placeholder="ilimitado" autocomplete="off" class="min-max-input">	
+							<label for="max-area">m²</label>
+						</div>
+					</div>
+				</form>
+				<form>
+					<div class="label-title">
+						<label>Número de vagas na garagem</label>
+					</div>
+					<div class="bullets">
+						<input type="radio" name="garage" id="garagem1" class="bullet"/>
+						<label for="garagem1" class="bullet-label bullet1"></label>
+						<input type="radio" name="garage" id="garagem2" class="bullet"/>
+						<label for="garagem2" class="bullet-label bullet2"></label>
+						<input type="radio" name="garage" id="garagem3" class="bullet"/>
+						<label for="garagem3" class="bullet-label bullet3"></label>
+						<input type="radio" name="garage" id="garagem4" class="bullet"/>
+						<label for="garagem4" class="bullet-label bullet4"></label>
+						<input type="radio" name="garage" id="garagem5" class="bullet"/>
+						<label for="garagem5" class="bullet-label bullet5"></label>	
+					</div>
+				</form>
+				<form class="garage">
+					<div class="label-title">
+						<label>Número de banheiros</label>
+					</div>
+					<div class="bullets">
+						<input type="radio" name="bath" id="banheiro1" class="bullet"/>
+						<label for="banheiro1" class="bullet-label bullet1"></label>
+						<input type="radio" name="bath" id="banheiro2" class="bullet"/>
+						<label for="banheiro2" class="bullet-label bullet2"></label>
+						<input type="radio" name="bath" id="banheiro3" class="bullet"/>
+						<label for="banheiro3" class="bullet-label bullet3"></label>
+						<input type="radio" name="bath" id="banheiro4" class="bullet"/>
+						<label for="banheiro4" class="bullet-label bullet4"></label>
+						<input type="radio" name="bath" id="banheiro5" class="bullet"/>
+						<label for="banheiro5" class="bullet-label bullet5"></label>	
+					</div>
+				</form>
+			</div>
+		</aside>
+		<section>
+			<nav>
+				<a class="opt-link comprar"><p>Comprar</p></a>
+				<a class="opt-link link"><p>Alugar</p></a>
+				<a class="opt-link link"><p>Imóveis Novos</p></a>
+				<a class="opt-link link"><p>Seleção Viva Real</p></a>
+			</nav>
+			<article class="js-main-container">
+
+			</article>
+		</section>
+	</main>
+	<script type="module" src="./srcs/index.js" />
+</body>
+</html>

@@ -1,0 +1,577 @@
+:root {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fff;
+	min-width: 1320px;	
+}
+
+a {
+	cursor: pointer;
+}
+
+/* HEADER AND NAVIGATION BAR */
+
+header {
+	background-color: #1190cd;
+	padding-left: 48px;
+	padding-right: 48px;
+	height: 56px;
+	display: flex;
+	position: relative;
+}
+
+header .site-header-container {
+	display: flex;
+	justify-content: space-between;
+    position: relative;
+	vertical-align: baseline;
+}
+
+/* VIVA REAL LOGO */
+.site-header-icon {
+	height: 56px;
+	width: 148px;
+}
+
+.site-header-icon img {
+	height: 34px;
+	margin: 11px;	
+}
+
+/* NAVIGATION ICONS */
+.site-navigation {
+	display: flex;
+}
+
+.site-navigation-right {
+	display: flex;
+	position: absolute;
+	right: 48px
+}
+
+a.nav-link {
+	text-decoration: none;
+	text-align: center;
+    text-decoration: none;
+	padding: 0 16px;
+}
+
+a.nav-link:hover {
+	background-color: #249ad1;
+}
+
+header p {
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 56px;
+	color: #fff;
+    text-transform: uppercase;
+}
+
+/* MAIN CONTENT */
+
+main {
+	padding-top: 60px;
+	display: flex;
+	justify-content: center;
+}
+
+aside {
+	width: 288px;
+	padding-left: 48px;
+}
+
+section {
+	width: 1010px;
+	padding-left: 22px;
+	padding-right: 48px;
+
+}
+
+/* SEACH BAR */
+.search-container {
+	background-color: #fdd685;
+	border: solid 1px #fdb10f;
+	width: 288px;
+	border-radius: 4px;
+	padding: 16px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+.search-field {
+	margin-bottom: 15px;
+	width: 254px;
+	box-sizing: border-box;
+}
+
+.label-title {
+	margin-bottom: 7px;
+}
+
+.label-title label {
+	color: #2a1d00;
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 21px;
+}
+
+.text-box {
+	font-size: 14px;
+	background-color: #fff;
+	text-align: left;
+	color: grey;
+	font-weight: 300;
+	border: 1px solid #ebebeb;
+	border-radius: 5px;
+	box-shadow: 1px 1px rgb(200, 200, 200);
+	padding: 14px;
+	width: 100%;
+	box-sizing: border-box;
+	cursor: default
+}
+
+.text-box:focus {
+	border: 2px solid #1190cd;
+	height: 46px;
+	width: 254px;
+	padding: 13px
+}
+
+/* SWITCH CHECKBOX BUTTON */
+.checkbox {
+	margin-bottom: 24px;
+}
+
+.search-checkbox {
+	position: absolute;
+	left: -9999px;
+}
+
+.checkbox-label {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	cursor: pointer;
+	width: 254px;
+}
+
+.checkbox-label span {
+	font-size: 13px;
+	line-height: 32px;
+	padding-left: 8px;
+	position: absolute;
+	top: 0
+}
+
+.checkbox-label::before,
+.checkbox-label::after {
+	content: "";
+}
+
+.checkbox-label::before {
+	display: inline-block;
+	width: 52px;
+	height: 32px;
+	background-color: #e5cf8c;
+	border-radius: 16px;
+}
+
+.checkbox-label::after {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 28px;
+	height: 28px;
+	border-radius: 14px;
+	background-color: #fff;
+}
+
+.search-checkbox:checked + .checkbox-label::before {
+	background-color: #1190cd;
+}
+
+.search-checkbox:checked + .checkbox-label::after {
+	left: 22px;
+}
+
+.search {
+	position: relative;
+	margin-bottom: 24px;
+}
+
+.search img {
+	position: absolute;
+	width: 16px;
+	top: 19px;
+	right: 15px;
+	cursor: default
+}
+
+.search-price {
+	display: flex;
+	column-gap: 15px;
+}
+
+.search-price input {
+	text-align: right;
+}
+
+.price label {
+	position: relative;
+	color: grey;
+	bottom: 28px;
+	left: 14px;
+}
+
+.price {
+	font-size: 13px;
+	height: 44px;
+	margin-bottom: 16px
+}
+
+.bullets {
+	display: flex;
+	gap: 14px;
+}
+
+.bullet {
+	position: absolute;
+	left: -9999px;
+}
+
+.bullet-label {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	cursor: pointer;
+}
+
+.bullet-label::before{
+	content: "";
+}
+
+.bullet1::after {
+	content: "1+"
+}
+
+.bullet2::after {
+	content: "2+"
+}
+
+.bullet3::after {
+	content: "3+"
+}
+
+.bullet4::after {
+	content: "4+"
+}
+
+.bullet5::after {
+	content: "5+"
+}
+
+.bullet-label::before {
+	display: flex;
+	margin-top: 8px;
+	width: 40px;
+	height: 32px;
+	background-color: #fff;
+	border-radius: 16px;
+	box-shadow: 1px 1px rgb(200, 200, 200);
+}
+
+.bullet-label::after {
+	position: absolute;
+	bottom: 9px;
+	left: 14px;
+	font-size: 13px;
+	color: grey
+}
+
+.bullet-label:hover:before {
+	background-color: #ebebeb;
+}
+
+.bullet:checked + .bullet-label::before {
+	background-color: #1190cd;
+}
+
+.bullet:checked + .bullet-label::after {
+	color: #fff;
+}
+
+/* OPTIONS BLOCK */
+
+.options-container {
+	background-color: #fff;
+	border: solid 1px #ebebeb;
+	width: 288px;
+	border-radius: 4px;
+	padding: 16px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+.search-area {
+	display: flex;
+	column-gap: 15px;
+}
+
+.search-area input {
+	text-align: right;
+	padding-right: 34px;
+}
+
+.area label {
+	position: relative;
+	color: grey;
+	bottom: 30px;
+	left: 90px;
+}
+
+.area {
+	font-size: 13px;
+	height: 44px;
+	margin-bottom: 16px
+}
+
+.garage {
+	margin-top: 16px
+}
+
+/* MAIN CONTENT */
+
+nav {
+	width: 100%;
+	border-bottom: 1px #ebebeb solid;
+	display: flex
+}
+
+.opt-link {
+	padding:  0 24px;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 38px;
+	color: #1190cd;
+    text-transform: uppercase;
+	text-decoration: none;
+}
+
+.comprar {
+	border-bottom: #1190cd 4px solid;
+	cursor:default
+}
+
+.link:hover {
+	background-color: #ecf6fb
+}
+
+.min-max-input {
+	font-size: 14px;
+	font-weight: 300;
+	border: 1px solid #ebebeb;
+	border-radius: 5px;
+	padding: 14px;
+	width: 119.5px;
+	height: 44px;
+	box-sizing: border-box;
+}
+
+.min-max-input:focus {
+	border: 2px solid #1190cd
+}
+
+/* JS CONTENT */
+
+.js-search-location {
+	line-height: 28px;
+	margin-top: 10px;
+	padding: 0
+}
+
+.js-search-location button {
+	font-size: 13px;
+	color: rgb(77, 77, 77);
+	background-color: #fdd685;
+	border: none;
+	position: relative;
+}
+
+.js-search-location button::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	right: -10px;
+	bottom: 2px;
+	color: #fdd685;
+}
+
+.js-search-location button::before {
+	color: grey;
+}
+
+.js-search-location button::after {
+	content: "x";
+	position: absolute;
+	right: -10px;
+	bottom: 2px;
+	color: grey
+}
+
+.js-search-location:hover + .js-search-location button::after {
+	color: #fdd685;
+}
+
+.js-main-container {
+	margin-top: 28px
+}
+
+.js-header-block {
+	margin-bottom: 24px;
+}
+
+.warning-message {
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: 800;
+	color: #000;
+	text-align: center;
+
+}
+
+.warning-status {
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: 200;
+	color: #f00;
+	text-align: center;
+	
+}
+
+.header-counter {
+	padding-bottom: 16px;
+}
+
+.total-count {
+	font-size: 24px;
+	font-weight: 600;
+	color: black;
+	padding-right: 8px
+}
+
+.text-count {
+	font-size: 20px;
+	font-weight: 400;
+	color: black;
+}
+
+.header-bullets {
+	display: flex;
+}
+
+.header-bullets button {
+	height: 30px;
+	border: 1px solid #1190cd;
+	border-radius: 16px;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 28px;
+	font-size: 13px;
+	color: #1190cd;
+	background-color: #fff;
+}
+
+.header-bullets label {
+	position: absolute;
+
+}
+
+.js-cards {
+	display: flex;
+	margin-bottom: 10px;
+	border: 1px solid #ebebeb;
+	cursor: pointer
+}
+
+.js-cards img {
+	width: 360px;
+	height: 240px
+}
+
+.js-content {
+	padding: 25px 14px;
+	width: 740;
+}
+
+.js-address {
+	font-size: 13px;
+	color: grey;
+	margin-bottom: 12px;
+}
+
+.js-details {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 16px;
+}
+
+.js-title {
+	font-size: 20px;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+.js-detail-number,
+.js-detail-text {
+	font-size: 13px;
+}
+
+.js-detail-number {
+	font-weight: 600;
+}
+
+.js-detail-text {
+	padding-right: 5px;
+}
+
+.js-amenity {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 36px;
+}
+
+.js-amenity-label {
+	border-radius: 10px;
+	background-color: #ebebeb;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 20px;
+	font-weight: 600;
+	color: #a8adac;
+}
+
+.js-amenity-label p{
+	text-transform: capitalize;
+	font-size: 13px;
+}
+
+.js-price {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.js-condo {
+	margin-top: 5px
+}
+
+.js-condo-text {
+	font-size: 13px;
+	font-weight: 200;
+}
+
+.js-condo-number {
+	font-size: 13px;
+	font-weight: 600;
+}
