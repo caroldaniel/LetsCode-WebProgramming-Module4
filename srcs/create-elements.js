@@ -1,10 +1,8 @@
 export const createSearchBullet = (searchContainer, cityName) => {
-	const innerButton = document.createElement("button");
-	searchContainer.appendChild(innerButton);
-	const labelCity = document.createTextNode(`${cityName}`);
-	const innerLabel = document.createElement("label");
-	searchContainer.appendChild(innerLabel);
-	innerButton.appendChild(labelCity);
+	searchContainer.innerHTML = `
+	<a href="index.html" class="js-locationBullet">
+		${cityName}
+	</a>`
 }
 
 const createHeader = (apiData, headerContainer, cityName) => {
@@ -29,8 +27,13 @@ const createHeaderBullet = (headerContainer, cityName) => {
 	formBullet.className = "location-bullet";
 	innerDiv.appendChild(formBullet);
 	const buttonBullet = document.createElement("button");
+	buttonBullet.setAttribute("id", "js-headerBullet-button");
+	const labelBullet = document.createElement("label");
+	labelBullet.className = "js-headerBullet-label";
+	labelBullet.htmlFor = "js-headerBullet-button";
 	const labelCity = document.createTextNode(`${cityName}`);
 	formBullet.appendChild(buttonBullet).appendChild(labelCity);
+	formBullet.appendChild(labelBullet);
 }
 
 const createAmenities = (amenity, amenitiesBox) => {

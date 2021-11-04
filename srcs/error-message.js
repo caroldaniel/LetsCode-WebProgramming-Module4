@@ -1,8 +1,8 @@
 export const printErrorMessage = (status, mainContainer) => {
 	mainContainer.innerHTML = `
-	<h1 class="warning-message">OOOOPS!</h1>
-	<h1 class="warning-message">ALGO DEU ERRADO NA SUA BUSCA.</h1>
-	<h2 class="warning-status">status ${status}</h2>
-	<h1 class="warning-message">POR FAVOR, TENTE NOVAMENTE.</h1>
+	<p class="warning-message">OOOOPS!</p>
+	<p class="warning-message">ALGO DEU ERRADO NA SUA BUSCA.</p>
+	<p class="warning-status">status ${status}</p>
+	<p class="warning-message">POR FAVOR, TENTE NOVAMENTE.</p>
 	`
 }
