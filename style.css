@@ -393,38 +393,35 @@ nav {
 	padding: 0
 }
 
-.js-search-location button {
+.js-locationBullet {
 	font-size: 13px;
 	color: rgb(77, 77, 77);
 	background-color: #fdd685;
 	border: none;
+	text-decoration: none;
 	position: relative;
 }
 
-.js-search-location button::before {
-	content: "";
-	width: 10px;
-	height: 10px;
-	border-radius: 5px;
-	right: -10px;
-	bottom: 2px;
+.js-locationBullet::after {
+	border-radius: 50%;
+    color: grey;
+    content: "×";
+	font-weight: 500;
+    display: inline-block;
+    font-size: 16px;
+    height: 14px;
+    line-height: 14px;
+    padding: 1px;
+    position: absolute;
+    right: -25px;
+    text-align: center;
+    width: 14px;
+	top: 1px
+}
+
+.js-locationBullet:hover:after {
 	color: #fdd685;
-}
-
-.js-search-location button::before {
-	color: grey;
-}
-
-.js-search-location button::after {
-	content: "x";
-	position: absolute;
-	right: -10px;
-	bottom: 2px;
-	color: grey
-}
-
-.js-search-location:hover + .js-search-location button::after {
-	color: #fdd685;
+	background-color: #988050;
 }
 
 .js-main-container {
@@ -438,8 +435,8 @@ nav {
 .warning-message {
 	font-size: 36px;
 	line-height: 48px;
-	font-weight: 800;
-	color: #000;
+	font-weight: 600;
+	color: rgb(59, 59, 59);
 	text-align: center;
 
 }
@@ -472,9 +469,10 @@ nav {
 
 .header-bullets {
 	display: flex;
+	cursor: pointer;
 }
 
-.header-bullets button {
+#js-headerBullet-button {
 	height: 30px;
 	border: 1px solid #1190cd;
 	border-radius: 16px;
@@ -486,9 +484,26 @@ nav {
 	background-color: #fff;
 }
 
-.header-bullets label {
-	position: absolute;
+.location-bullet {
+	position: relative
+}
 
+.js-headerBullet-label::after {
+	color:#1190cd;
+	content: "×";
+	font-weight: 500;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 14px;
+	position: absolute;
+	text-align: center;
+	right: 12px;
+	top: 8px;
+	cursor: pointer
+}
+
+#js-headerBullet-button:hover {
+	background-color: #ecf6fb;
 }
 
 .js-cards {
