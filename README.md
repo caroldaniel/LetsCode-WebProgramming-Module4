@@ -18,3 +18,5 @@ Create a simplified clone of the ["Viva Real" website](https://www.vivareal.com.
 The cloned site must create the elements of the houses and apartments available for purchase according to the API's response, and the city searched by the user. 
 
 The cloned website is available on this GitHub repository [page](https://caroldaniel.github.io/LetsCode-WebProgramming-Module4/) and on [this codesandbox](https://codesandbox.io/s/santandercoders-web-project-module-4-9uwsi?file=/index.html) directory.
+
+[!VivaRealClone](https://github.com/caroldaniel/LetsCode-WebProgramming-Module4/blob/421e693d6760b59b6537ba495cbc044f968e6398/VivaRealClone-Working.gif)
