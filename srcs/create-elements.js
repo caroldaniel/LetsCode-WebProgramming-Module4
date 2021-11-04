@@ -78,9 +78,13 @@ const createEstateCard = (apiInfo, divCards) => {
 	content.className = "js-content";
 	cardBox.appendChild(content);
 	content.innerHTML = `
-	<h3 class="js-address">${apiInfo.link.data.street}, ${apiInfo.link.data.streetNumber} - ${apiInfo.link.data.neighborhood}, ${apiInfo.link.data.city} - ${apiInfo.link.data.state}</h3>
-	<h2 class="js-title">${apiInfo.link.name}</h2>
-	<section class="js-details">
+	<div class="js-card-titles">
+		<p class="js-location">${apiInfo.link.data.street}, ${apiInfo.link.data.streetNumber} - ${apiInfo.link.data.neighborhood}, ${apiInfo.link.data.city} - ${apiInfo.link.data.state}</p>
+	</div>
+	<div class="js-card-titles">
+		<p class="js-title">${apiInfo.link.name}</p>
+	</div>
+	<div class="js-details">
 		<span class="js-detail-number">${apiInfo.listing.usableAreas[0]}</span>
 		<span class="js-detail-text">m²</span>
 		<span class="js-detail-number">${apiInfo.listing.bedrooms[0]}</span>
@@ -89,7 +93,7 @@ const createEstateCard = (apiInfo, divCards) => {
 		<span class="js-detail-text">Banheiros</span>
 		<span class="js-detail-number">${apiInfo.listing.parkingSpaces[0]}</span>
 		<span class="js-detail-text">Vagas</span>
-	</section>
+	</div>
 	`
 	const amenitiesBox = document.createElement("div");
 	amenitiesBox.className = "js-amenity";

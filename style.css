@@ -8,6 +8,10 @@ a {
 	cursor: pointer;
 }
 
+h1, h2, h3, h4 {
+	display: inline-block;
+}
+
 /* HEADER AND NAVIGATION BAR */
 
 header {
@@ -81,7 +85,7 @@ aside {
 }
 
 section {
-	width: 1010px;
+	width: 914px;
 	padding-left: 22px;
 	padding-right: 48px;
 
@@ -343,7 +347,6 @@ section {
 /* MAIN CONTENT */
 
 nav {
-	width: 100%;
 	border-bottom: 1px #ebebeb solid;
 	display: flex
 }
@@ -502,26 +505,31 @@ nav {
 
 .js-content {
 	padding: 25px 14px;
-	width: 740;
 }
 
-.js-address {
+.js-card-titles {
+	width: 526px;
+	padding-bottom: 16px;
+}
+
+.js-card-titles .js-location {
 	font-size: 13px;
 	color: grey;
-	margin-bottom: 12px;
+}
+
+.js-card-titles .js-title {
+	font-size: 20px;
+	color: #000;
 }
 
 .js-details {
 	padding: 0;
 	margin: 0;
+	margin-top: 8px;
 	margin-bottom: 16px;
+	width: 100%
 }
 
-.js-title {
-	font-size: 20px;
-	color: #000;
-	margin-bottom: 20px;
-}
 
 .js-detail-number,
 .js-detail-text {
